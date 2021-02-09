@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- style -->
+    <link rel="stylesheet" href="style.css">
+<!-- style -->
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- bootstrap -->
+    <title>Venedor</title>
+</head>
+<!-- ==================================================== // venedor \\ ==================================================================== -->
+<body>
+    <!-- second page constructor -->
+    <div class="wrapper">
+        <div class="col">
+            <div id="second_page"></div>
+        </div>
+        <div class="col"></div>
+    </div>
+    <!-- I used the venedor image as placeholder for almost all of the images -->
+    <header class="top_bar">
+        <section class="section_one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="top">
+                            <nav class="top_bar_nav">
+                                <ul class="top_bar_nav_list">
+                                    <li class="nav_item" id="wishlist"><a href="#links">My Wishlist</a> ( <span id="wishlist"></span> )</li>
+                                    <li class="nav_item" id="account"><a href="#links">My Account</a></li>
+                                    <li class="nav_item" id="shoppingcart"><a href="#links">Shopping Cart</a></li>
+                                    <li class="nav_item" id="checkout"><a href="#links">Checkout.</a></li>
+                                </ul>
+                                <ul class="welcome" id="welcome">
+                                    <li class="nav_item logIn"><a href="#links">login</a></li>
+                                    <li class="nav_item create_account"><a href="#links">create account</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-10">
+                        <h1 class="venedor"><span class="venedor_ve">Ve</span>nedor<span class="venedor_period">.</span></h1>
+                        <nav class="currency_nav">
+                            <ul class="currency_nav_items">
+                                <li class="nav_item"><a href="#links"><span id="currency"></span></a></li>
+                                <li class="nav_item"><a href="#links"><span id="language"></span></a></li>
+                                <li class="nav_item"><a href="#links">item(s)-$<span id="items_cart">  </span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12">
+                        <nav class="selections_nav">
+                            <ul class="selections_nav_items">
+                                <li class="nav_item"><a href="#links">Lorem.</a></li>
+                                <li class="nav_item"><a href="#links">Lorem.</a></li>
+                                <li class="nav_item"><a href="#links">Lorem.</a></li>
+                                <li class="nav_item"><a href="#links">Lorem.</a></li>
+                                <li class="nav_item"><a href="#links">Lorem.</a></li>
+                                <li class="nav_item"><a href="#links">Lorem.</a></li>
+                            </ul>
+                        </nav>
+                        <input type="search" value="" class="search">
+                        <button class="search-btn"><img src="" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="slider_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slidershowcase middle">
+                        <div class="slider">
+                            <input type="radio" name="r" id="r1" checked>
+                            <input type="radio" name="r" id="r2">
+                            <input type="radio" name="r" id="r3">
+                            <div class="slides s1">
+                                <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="image">
+                            </div>
+                            <div class="slides">
+                                <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="image">
+                            </div>
+                            <div class="slides">
+                                <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="image">
+                            </div>
+                            <div class="navigation">
+                                <label for="r1" class="bar">hello</label>
+                                <label for="r2" class="bar">hello</label>
+                                <label for="r3" class="bar">hello</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="sales" id="sales">
+                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="image" class="sales">
+                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="image" class="sales">
+                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="image" class="sales">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="latest" id="latest">
+                        <h2 class="latest_h2">| Latest</h2>
+                        <button id="latest_btn" class="latest_btn">(</button>
+                        <button id="latest_btn" class="latest_btn">)</button>
+                        <p class="latest_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, maxime!</p>
+                        <nav class="latest_nav">
+                            <ul class="latest_nav_items">
+                            <!-- 1 -->
+                                <li class="nav_item">
+                                    <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image" id="view_img">
+                                    <h3 class="item_name">purse <span class="price_tag" id="price_tag">$ 20.00</span></h3>
+                                    <a href="#links" class="latest_links">
+                                        <button class="add_to_cart" id="add_to_cart">ADD TO CART</button>
+                                    </a>
+                                </li>
+                            <!-- 2 -->
+                                <li class="nav_item">
+                                    <h3 class="item_name">wallet <span class="price_tag" id="price_tag">$ 20.00</span></h3>
+                                    <button class="add_to_cart" id="add_to_cart">ADD TO CART</button>
+                                    <a href="#links" class="latest_links">
+                                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image" id="view_img">
+                                    </a>
+                                </li>
+                            <!-- 3 -->
+                                <li class="nav_item">
+                                    <h3 class="item_name">bracelet <span class="price_tag" id="price_tag">$ 20.00</span></h3>
+                                    <button class="add_to_cart" id="add_to_cart">ADD TO CART</button>
+                                    <a href="#links" class="latest_links">
+                                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image" id="view_img">
+                                    </a>
+                                </li>
+                            <!-- 4 -->
+                                <li class="nav_item">
+                                    <h3 class="item_name">necklace <span class="price_tag" id="price_tag">$ 20.00</span></h3>
+                                    <button class="add_to_cart" id="add_to_cart">ADD TO CART</button>
+                                    <a href="#links" class="latest_links">
+                                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image" id="view_img">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="welcome_info">
+                        <h2 class="">Wecome to Venedor</h2>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ea impedit, sunt obcaecati ut nam sed fugit suscipit temporibus, qui tempora blanditiis placeat, odit animi numquam ab molestias enim debitis eius deserunt necessitatibus!</p>
+                        <!-- This is just for separating these two P tags -->
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ea impedit, sunt obcaecati ut nam sed fugit suscipit temporibus, qui tempora blanditiis placeat, odit animi numquam ab molestias enim debitis eius deserunt necessitatibus!</p>
+                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="image">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="bestsellers" id="bestsellers">
+                        <h2 class="bestsellers_h2">| Bestsellers</h2>
+                        <button id="bestsellers_btn" class="bestsellers_btn">(</button>
+                        <button id="bestsellers_btn" class="bestsellers_btn">)</button>
+                        <p class="bestsellers_p"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ullam.</p>
+                        <nav class="bestsellers_nav">
+                            <ul class="bestsellers_nav_items">
+                            <!-- 1 -->
+                                <li class="nav_item">
+                                    <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image" id="view_img">
+                                    <h3 class="item_name">Socks <span class="price_tag" id="price_tag">$ 20.00</span></h3>
+                                    <a href="#links" class="bestsellers_links" id="bestsellers_links">
+                                        <button class="add_to_cart" id="add_to_cart">ADD TO CART</button>
+                                    </a>
+                                </li>
+                            <!-- 2 -->
+                                <li class="nav_item">
+                                    <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image" id="view_img">
+                                    <h3 class="item_name">Pants <span class="price_tag" id="price_tag">$ 20.00</span></h3>
+                                    <a href="#links" class="bestsellers_links" id="bestsellers_links">
+                                        <button class="add_to_cart" id="add_to_cart">ADD TO CART</button>
+                                    </a>
+                                </li>
+                            <!-- 3 -->
+                                <li class="nav_item">
+                                    <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image" id="view_img">
+                                    <h3 class="item_name">Shirt <span class="price_tag" id="price_tag">$ 20.00</span></h3>
+                                    <a href="#links" class="bestsellers_links" id="bestsellers_links">
+                                        <button class="add_to_cart" id="add_to_cart">ADD TO CART</button>
+                                    </a>
+                                </li>
+                            <!-- 4 -->
+                                <li class="nav_item">
+                                    <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image" id="view_img">
+                                    <h3 class="item_name">Shoes <span class="price_tag" id="price_tag">$ 20.00</span></h3>
+                                    <a href="#links" class="bestsellers_links" id="bestsellers_links">
+                                        <button class="add_to_cart" id="add_to_cart">ADD TO CART</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="manufactures">
+                        <h2 class="manufactures_h2">| Manufactures</h2>
+                        <button id="manufactures_btn" class="manufactures_btn">(</button>
+                        <button id="manufactures_btn" class="manufactures_btn">)</button>
+                        <nav class="manufactures_nav">
+                            <ul class="manufactures_nav_items">
+                            <!-- 1 -->
+                                <li class="nav_item">
+                                    <a href="#links" class="manufactures_links">
+                                        <button class="manufactures_btn" id="manufactures_btn">
+                                            <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image">
+                                        </button>
+                                    </a>
+                                </li>
+                            <!-- 2 -->
+                                <li class="nav_item">
+                                    <a href="#links" class="manufactures_links">
+                                        <button class="manufactures_btn" id="manufactures_btn">
+                                            <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image">
+                                        </button>
+                                    </a>
+                                </li>
+                            <!-- 3 -->
+                                <li class="nav_item">
+                                    <a href="#links" class="manufactures_links">
+                                        <button class="manufactures_btn" id="manufactures_btn">
+                                            <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image">
+                                        </button>
+                                    </a>
+                                </li>
+                            <!-- 4 -->
+                                <li class="nav_item">
+                                    <a href="#links" class="manufactures_links">
+                                        <button class="manufactures_btn" id="manufactures_btn">
+                                            <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image">
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="signup">
+                        <p class="signup_p">SIGN UP TO RECEIVE THE LATEST FASHION NEWS</p>
+                        <nav class="signup_nav">
+                            <ul class="signup_nav_items">
+                                <li class="nav_item">
+                                    <a href="#links" class="signup_link">
+                                        <input type="email" name="Enter your email address" id="input_email">
+                                        <button class="input_email_btn">SIGN UP</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="info">
+                    <!-- my account -->
+                        <div class="myAccount">
+                            <h4 class="myAccount_h2">my account</h4>
+                            <nav class="myAccount_nav">
+                                <ul class="nav_items">
+                                    <li class="nav_item"><a href="#links">Lorem, ipsum dolor.</a></li>
+                                    <li class="nav_item"><a href="#links">Lorem, ipsum dolor.</a></li>
+                                    <li class="nav_item"><a href="#links">Lorem, ipsum dolor.</a></li>
+                                    <li class="nav_item"><a href="#links">Lorem, ipsum dolor.</a></li>
+                                    <li class="nav_item"><a href="#links">Lorem, ipsum dolor.</a></li>
+                                    <li class="nav_item"><a href="#links">Lorem, ipsum dolor.</a></li>
+                                    <li class="nav_item"><a href="#links">Lorem, ipsum dolor.</a></li>
+                                </ul>
+                            </nav>    
+                        </div>
+                    <!-- information -->
+                        <div class="information">
+                            <h4 class="information">information</h4>
+                            <nav class="myAccount_nav">
+                                <ul class="nav_items">
+                                    <li><a href="#links" class="nav_information_btn"><button>?</button></a></li>
+                                    <li class="nav_item">
+                                        <a href="#links">
+                                            <button class="information">
+                                                <img src="" alt="Links to social media">
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a href="#links">
+                                            <button class="information">
+                                                <img src="" alt="Links to social media">
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a href="#links">
+                                            <button class="information">
+                                                <img src="" alt="Links to social media">
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a href="#links">
+                                            <button class="information">
+                                                <img src="" alt="Links to social media">
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a href="#links">
+                                            <button class="information">
+                                                <img src="" alt="Links to social media">
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a href="#links">
+                                            <button class="information">
+                                                <img src="" alt="Links to social media">
+                                            </button>
+                                        </a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a href="#links">
+                                            <button class="information">
+                                                <img src="" alt="Links to social media">
+                                            </button>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>   
+                        </div>
+                    <!-- twitter -->
+                        <div class="twitter">
+                            <h4 class="twitter_h2">from twitter</h4>
+                            <nav class="twitter_nav">
+                                <ul class="nav_items">
+                                    <li class="nav_item"><p class="nav_item_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum facilis veritatis impedit rerum aperiam culpa, nam ut expedita et?<a href="#links">Lorem, ipsum.</a></p></li>
+                                    <li class="nav_item"><p class="nav_item_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eum facilis veritatis impedit rerum aperiam culpa, nam ut expedita et?<a href="#links">Lorem, ipsum.</a></p></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            <!-- facebook -->
+                <div class="col-6">
+                    <div class="facebook">
+                        <h4 class="facebook">facebook</h4>
+                        <button class="like">Like!</button>
+                        <h5 id="facebook_like_counter">1452 people like PromoKit</h5>
+                        <nav class="facebookefacebook_nav">
+                            <ul class="facebook_nav_items">
+                            <!-- 1 -->
+                                <li class="nav_item">
+                                    placeholderName
+                                    <a href="#links" class="facebook_links" id="facebook_image">
+                                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image">
+                                    </a>
+                                </li>
+                            <!-- 2 -->
+                                <li class="nav_item">
+                                    placeholderName
+                                    <a href="#links" class="people_links" id="facebook_image">
+                                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image">
+                                    </a>
+                                </li>
+                            <!-- 3 -->
+                                <li class="nav_item">
+                                    placeholderName
+                                    <a href="#links" class="people_links" id="facebook_image">
+                                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image">
+                                    </a>
+                                </li>
+                            <!-- 4 -->
+                                <li class="nav_item">
+                                    placeholderName
+                                    <a href="#links" class="people_links" id="facebook_image">
+                                        <img src="file:///C:/Users/Ernest/Downloads/venedor.jpg" alt="item image">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="copyright"></div>
+            </div>
+        </div>
+    </footer>
+
+<!-- js -->
+    <script src="app.js"></script>
+<!-- js -->
+</body>
+</html>
